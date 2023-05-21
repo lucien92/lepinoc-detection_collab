@@ -5,11 +5,11 @@ import os
 
 def cropp():
     path_to_data = "/content/drive/MyDrive/sets_above30/test_detect"
-    path_to_csv = "/content/lepinoc-detection_for_collab/prediction_results/exp/labels/xyxy"
-    output_path = "/content/lepinoc-detection_for_collab/crop/Cropped_Anthophila"
+    path_to_csv = "/content/lepinoc-detection_collab/prediction_results/exp/labels/xyxy"
+    output_path = "/content/lepinoc-detection_collab/crop/Cropped_Anthophila"
 
     try:
-        os.mkdir("/content/lepinoc-detection_for_collab/crop/Cropped_Anthophila")
+        os.mkdir("/content/lepinoc-detection_collab/crop/Cropped_Anthophila")
     except:
         pass
 

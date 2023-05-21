@@ -12,7 +12,7 @@ from download_from_inat import download_from_csv
 ## stored in the df_taxa_in_bdd variable
 
 # path to the csv file with all the taxon name 
-csv_path = '/content/lepinoc-detection_for_collab/classif/scrapping/especes.csv'
+csv_path = '/content/lepinoc-detection_collab/classif/scrapping/especes.csv'
 # Load the csv file with all the taxon name
 df_taxa_in_bdd = pd.read_csv(csv_path, sep=',')
 # Get the taxon names as an iterable
@@ -20,7 +20,7 @@ df_taxa_in_bdd = df_taxa_in_bdd['LB_NOM']
 
 
 # path to the sqlite database
-sqlite_path = '/content/lepinoc-detection_for_collab/classif/scrapping/inat.db'
+sqlite_path = '/content/lepinoc-detection_collab/classif/scrapping/inat.db'
 
 # path to the folder where the csv and the images will be saved
 output_folder = '/media/lucien/My Passport/scrapp_inat_lepido'

@@ -14,7 +14,7 @@ path = '/home/lucien/Documents/final_project_Essec/scrapping/chromedriver' #allo
 
 #Création dossier pour les saumons : il faudra généraliser pour d'autres familles de poissons
 try:
-   os.mkdir('/content/lepinoc-detection_for_collab/classif/scrapping/Lepidoptera')
+   os.mkdir('/content/lepinoc-detection_collab/classif/scrapping/Lepidoptera')
 except:
     print('dossier déjà existant')
 
@@ -28,7 +28,7 @@ driver.get('https://www.inaturalist.org/observations?place_id=any&taxon_id=47157
 
 time.sleep(3)
 
-os.chdir('/content/lepinoc-detection_for_collab/classif/scrapping/Lepidoptera')
+os.chdir('/content/lepinoc-detection_collab/classif/scrapping/Lepidoptera')
 
 ### SCROLLER EN BAS DE PAGE POUR ATTEINDRE TOUS LES LIENS
 SCROLL_PAUSE_TIME = 2

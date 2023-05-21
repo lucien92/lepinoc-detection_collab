@@ -193,7 +193,7 @@ model.summary()
 import pandas as pd
 import numpy as np
 
-hierarchie = pd.read_csv("/content/lepinoc-detection_for_collab/classif/convert_and_analyse_data/correct_list.csv", delimiter = ';')
+hierarchie = pd.read_csv("/content/lepinoc-detection_collab/classif/convert_and_analyse_data/correct_list.csv", delimiter = ';')
 
 species = hierarchie["Espece"].unique()
 nb_species = len(species)
@@ -208,7 +208,7 @@ subfamily = list(hierarchie["Sous-Famille"].unique())
 nb_subfamily = len(subfamily)
 
 #hierarchie.set_index("species", inplace=True)
-data = pd.read_csv("/content/lepinoc-detection_for_collab/classif/convert_and_analyse_data/especes.csv")
+data = pd.read_csv("/content/lepinoc-detection_collab/classif/convert_and_analyse_data/especes.csv")
 #data.set_index("species", inplace=True)
 
 species_to_genus = np.zeros((nb_genus, nb_species))
@@ -288,7 +288,7 @@ model.compile(optimizers.SGD(learning_rate=lr, momentum=0.9), loss=loss, metrics
 #filepath = path to save the model at the end of each epoch
 
 model_checkpoint_cb = tf.keras.callbacks.ModelCheckpoint(
-    filepath='/content/lepinoc-detection_for_collab/classif/convert_and_analyse_data/model_crop/model_crop', 
+    filepath='/content/lepinoc-detection_collab/classif/convert_and_analyse_data/model_crop/model_crop', 
     save_weights_only=True,
     monitor='val_categorical_accuracy',
     mode='max',

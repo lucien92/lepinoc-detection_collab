@@ -12,4 +12,4 @@ for folder in os.listdir(path_to_data):
 
 df = pandas.DataFrame.from_dict(count, orient='index', columns=['nb_images'])
 print(df)
-df.to_csv("/content/lepinoc-detection_for_collab/classif/convert_data/nb_image_specie.csv", index=True, header=True, sep=',')
+df.to_csv("/content/lepinoc-detection_collab/classif/convert_data/nb_image_specie.csv", index=True, header=True, sep=',')
