@@ -274,7 +274,8 @@ def Hierarchicaloss(species_to_genus, genus_to_subfamily, subfamily_to_family, b
    
     # Return a function
     return HIERARCHICAL_loss
-loss=[Hierarchicaloss(species_to_genus, genus_to_subfamily, subfamily_to_family,8, alpha=0.5)]
+#loss=[Hierarchicaloss(species_to_genus, genus_to_subfamily, subfamily_to_family,8, alpha=0.5)]
+loss = 'categorical_crossentropy'
 ## Entraînement du modèle
 # Ajout de l'optimiseur, de la fonction coût et des métriques
 lr = 1e-3
